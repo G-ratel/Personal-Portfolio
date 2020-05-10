@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+  margin: 0;
+}
+#navbar {
+    position: fixed;
+    z-index: 999;
+    margin-top: 0;
+    /* left: 0; */
+    padding: 0;
+    width: 100%;
+    background-color: #2b2b5f;
+    display: flex;
+    list-style-type: none;
+  }
+  #navbar a {
+    color: white;
+    display: block;
+    padding:10px 30px;
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  #navbar a:hover {
+    color: #6969cc;
+  }
+
+  .parallax-wrapper {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .background {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(-1px) scale(2);
+  }
+  .background--me {
+    background-image: url('../img/divs.png');
+  }
+  .background--work {
+    background-image: url('../img/survey.png');
+  }
+  .title {
+    position: absolute;
+    margin: 0;
+    top: calc(50% - 50px);
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    height: 70px;
+    color: white;
+    font-size: 3.5rem;
+    background: rgba(0,0,0,0.4);
+  }
+  
+  .profile-desc {
+    z-index: 1;
+    position: relative;
+    background: #282E34;
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    line-height: 2em;
+    padding: 3rem;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+  }
+
+  .content div{
+	float: left;
+}
+.aboutimg {
+    width: 30%;
+    padding: 40px 40px 40px 40px;
+}
+.aboutimg img {
+    border-radius: 900px;
+}
+.aboutext {
+    width: 60%;
+    float: right;
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+p{
+    font-weight: 500;
+    font-family: Corbel;
+    font-size: 18px;
+}
+/* ul {
+    font-weight: 500;
+    font-family: Corbel;
+    font-size: 18px;
+} */
+.button {
+	margin: 0 auto;
+	background-color: black;
+	width: 10rem;
+    padding: 0.8rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+	font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 40px;
+}
+.container {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	font-size: 0;
+}
+.container .menu {
+	width: 47%;
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	padding: 0.2rem;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+.container .menu:hover {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	opacity: 0.8;
+	-webkit-transition: opacity 800ms ease-in-out 0s;
+	transition: opacity 800ms ease-in-out 0s;
+	-webkit-transition: -webkit-transform 1s ease-in-out 0s;
+	transition: -webkit-transform 1s ease-in-out 0s;
+	transition: transform 1s ease-in-out 0s;
+	transition: transform 1s ease-in-out 0s, -webkit-transform 1s ease-in-out 0s;
+	cursor: pointer;
+}
+
+.container .menu figure img {
+	width: 100%;
+	height: auto;
+}
+
+.container .menu figure figcaption {
+	font-family: "Franklin Gothic Medium";
+	color: rgba(89, 89, 89, 1);
+	font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 0.02rem;
+	text-align: center;
+	padding: 1rem 0rem 0rem;
+	text-transform: uppercase;
+}
+footer {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #2b2b5f;
+  }
+  footer a{
+    margin-left: 20px;
+    margin-right: 20px;
+}
